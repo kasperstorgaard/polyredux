@@ -1,6 +1,7 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "polyredux",
   "authors": [
+    "kasperstorgaard",
     "The Polymer Authors"
   ],
   "private": true,
