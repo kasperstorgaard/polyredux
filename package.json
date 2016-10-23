@@ -8,8 +8,8 @@
     "start": "polymer serve"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kasperstorgaard/polyredux.git"
+    "url": "git+https://github.com/kasperstorgaard/polyredux.git",
+    "type": "git"
   },
   "keywords": [
     "polymer",

@@ -20,5 +20,14 @@
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
-  }
+  },
+  "version": "0.0.1",
+  "description": "polymer redux base app",
+  "main": "polyredux.html",
+  "repository": {
+    "url": "git+https://github.com/kasperstorgaard/polyredux.git",
+    "type": "git"
+  },
+  "author": "kasperstorgaard",
+  "license": "MIT"
 }
