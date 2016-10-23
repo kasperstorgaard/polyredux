@@ -5,7 +5,7 @@
   "main": "polyredux.html",
   "scripts": {
     "test": "wct src/**/*_test.html",
-    "start": "polymer serve --open"
+    "start": "polymer serve"
   },
   "repository": {
     "type": "git",
