@@ -4,7 +4,7 @@
   "description": "polymer redux base app",
   "main": "polyredux.html",
   "scripts": {
-    "test": "wct src/**/*_test.html",
+    "test": "wct",
     "start": "polymer serve"
   },
   "repository": {
@@ -22,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/kasperstorgaard/polyredux/issues"
   },
-  "homepage": "https://github.com/kasperstorgaard/polyredux#readme"
+  "homepage": "https://github.com/kasperstorgaard/polyredux#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "bower": "^1.7.7",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-html": "^1.4.0",
+    "polylint": "^2.10.0",
+    "polyserve": "^0.7.1",
+    "web-component-tester": "^4.3.4"
+  }
 }
