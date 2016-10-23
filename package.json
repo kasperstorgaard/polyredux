@@ -4,8 +4,12 @@
   "description": "polymer redux base app",
   "main": "polyredux.html",
   "scripts": {
-    "test": "wct",
-    "start": "polymer serve"
+    "build": "polymer build",
+    "serve": "polymer serve",
+    "serve:unbundled": "polymer serve build/unbundled",
+    "serve:bundled": "polymer serve build/bundled",
+    "start": "npm run serve",
+    "test": "wct"
   },
   "repository": {
     "url": "git+https://github.com/kasperstorgaard/polyredux.git",
@@ -32,5 +36,9 @@
     "polylint": "^2.10.0",
     "polyserve": "^0.7.1",
     "web-component-tester": "^4.3.4"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "4.2.3",
+    "polymer-cli": "^0.16.0"
   }
 }
