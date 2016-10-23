@@ -4,7 +4,8 @@
   "description": "polymer redux base app",
   "main": "polyredux.html",
   "scripts": {
-    "test": "wct src/**/*_test.html"
+    "test": "wct src/**/*_test.html",
+    "start": "polymer serve --open"
   },
   "repository": {
     "type": "git",
