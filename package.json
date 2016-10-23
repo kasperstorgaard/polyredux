@@ -39,6 +39,8 @@
   },
   "dependencies": {
     "eslint-plugin-react": "4.2.3",
-    "polymer-cli": "^0.16.0"
+    "polymer-cli": "^0.16.0",
+    "redux": "^3.6.0",
+    "rx": "^4.1.0"
   }
 }
