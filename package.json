@@ -5,11 +5,12 @@
   "main": "polyredux.html",
   "scripts": {
     "build": "polymer build",
+    "postinstall": "bower install",
     "serve": "polymer serve",
     "serve:unbundled": "polymer serve build/unbundled",
     "serve:bundled": "polymer serve build/bundled",
     "start": "npm run serve",
-    "test": "wct"
+    "test": "wct src/**/*_test.html"
   },
   "repository": {
     "url": "git+https://github.com/kasperstorgaard/polyredux.git",
