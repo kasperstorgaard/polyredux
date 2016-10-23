@@ -1,0 +1,25 @@
+{
+  "name": "polyredux",
+  "version": "0.0.1",
+  "description": "polymer redux base app",
+  "main": "polyredux.html",
+  "scripts": {
+    "test": "wct src/**/*_test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasperstorgaard/polyredux.git"
+  },
+  "keywords": [
+    "polymer",
+    "redux",
+    "rxjs",
+    "PWA"
+  ],
+  "author": "kasperstorgaard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kasperstorgaard/polyredux/issues"
+  },
+  "homepage": "https://github.com/kasperstorgaard/polyredux#readme"
+}
