@@ -30,7 +30,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <script>
         Polymer({
-            is: 'my-view3'
+            is: 'my-view3',
+            properties: {
+                state: {
+                    type: Object,
+                    value: () => ({})
+                }
+            }
         });
     </script>
 </dom-module>

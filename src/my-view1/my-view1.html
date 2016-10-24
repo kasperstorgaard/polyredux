@@ -25,12 +25,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <h1>View One</h1>
             <p>Ut labores minimum atomorum pro. Laudem tibique ut has.
             <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+
+            <h2>items</h2>
+            <ul>
+                <template is="dom-repeat" items="state.items">
+                    <li>[[item.text]]</li>
+                </template>
+            </ul>
+
+            <button on-click="addItem">Add item</button>
         </div>
     </template>
 
     <script>
         Polymer({
-            is: 'my-view1'
+            is: 'my-view1',
+            properties: {
+                state: {
+                    type: Object,
+                    value: () => ({})
+                }
+            },
+            addItem (e) {
+                const type = 'ADD_ITEM';
+                this.fire('action', { type, text: e.target.textContent }, { bubbles: true });
+            }
         });
     </script>
 </dom-module>

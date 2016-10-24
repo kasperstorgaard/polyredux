@@ -4,11 +4,10 @@
   "description": "polymer redux base app",
   "main": "polyredux.html",
   "scripts": {
-    "build": "polymer build",
+    "build": "gulp babel",
     "postinstall": "bower install",
     "serve": "polymer serve",
-    "serve:unbundled": "polymer serve build/unbundled",
-    "serve:bundled": "polymer serve build/bundled",
+    "serve:build": "polymer serve build",
     "start": "npm run serve",
     "test": "wct src/**/*_test.html"
   },
@@ -39,7 +38,14 @@
     "web-component-tester": "^4.3.4"
   },
   "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
     "eslint-plugin-react": "4.2.3",
+    "event-stream": "^3.3.4",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-if": "^2.0.1",
+    "polymer-build": "^0.4.1",
     "polymer-cli": "^0.16.0",
     "redux": "^3.6.0",
     "rx": "^4.1.0"
