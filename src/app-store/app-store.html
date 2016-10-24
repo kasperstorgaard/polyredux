@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../redux-lib/redux-lib.html">
+
+<dom-module id="app-store">
+    <script>
+        const items = (state = [], action) => {
+            const { type } = action;
+            if (type === 'ADD_ITEM') {
+                const { id, text } = action;
+                return [...state, { id, text }];
+            }
+            return state;
+        };
+
+        Polymer({
+            is: 'app-store',
+            properties: {
+                store: {
+                    type: Object,
+                    notify: true
+                }
+            },
+            attached () {
+                const { createStore } = window.Redux;
+                this._store = createStore(items);
+                this._subscribe(this._store);
+            },
+            dispatch (action) {
+                this._store.dispatch(action);
+            },
+            _subscribe (store) {
+                store.subscribe(() => {
+                    this.state = store.getState();
+                });
+            }
+        });
+    </script>
+</dom-module>
