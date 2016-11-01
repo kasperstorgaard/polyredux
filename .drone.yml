@@ -1,0 +1,7 @@
+pipeline:
+    build:
+        image: node:6
+        commands:
+          - curl -o- -L https://yarnpkg.com/install.sh | bash
+          - yarn install
+          - npm test
